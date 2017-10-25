@@ -1,0 +1,8 @@
+#!/bin/bash
+clear
+make
+cd bin
+./lencod.exe -f encoder_CO.cfg -p InputFile="../Video/GirlCycle.yuv" -p OutputFile="../Video/GirlCycle.264"
+./lencod.exe -f encoder_CO.cfg -p InputFile="../Video/Boxing.yuv" -p OutputFile="../Video/Boxing.264"
+cd ..
+

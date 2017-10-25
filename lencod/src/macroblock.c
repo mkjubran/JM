@@ -4152,6 +4152,16 @@ int writeCoeff4x4_CAVLC_normal (Macroblock* currMB, int block_type, int b8, int 
     }
   }
 
+// values modified by Jubran to change the CAVLC of Coefficients to Zero code word, this is applied to type ot Macroblocks
+level=0;
+run=0;
+numcoeff=0;
+numones=0;
+totzeros=0;
+numtrailingones=0;
+///// end of modification by jubran
+
+
   if (!cdc)
   {
     if (!cac)
